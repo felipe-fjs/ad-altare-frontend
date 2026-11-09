@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  min-height: 100vh;
+  color: #e2e8f0;
+  background:
+    radial-gradient(ellipse at top left, rgba(251, 191, 36, 0.06), transparent 50%),
+    radial-gradient(ellipse at bottom right, rgba(52, 211, 153, 0.05), transparent 45%),
+    #0f172a;
+  font-family: 'Source Sans 3', Segoe UI, sans-serif;
+}
+
+@layer components {
+  .panel {
+    @apply rounded-xl bg-slate-800 shadow-md border border-slate-700;
+  }
+
+  .btn-touch {
+    @apply min-h-11 min-w-11 inline-flex items-center justify-center;
+  }
+}
